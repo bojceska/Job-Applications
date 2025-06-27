@@ -8,7 +8,7 @@ st.title("Job Application Tracker")
 if "applications" not in st.session_state:
     st.session_state.applications = []
 
-with st.form["Add new application"]:
+with st.form("Add new application"):
     company = st.text_input("Company")
     role = st.text_input("Role")
     date_applied = st.date_input("Date Applied")
